@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context=".registro">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="80sp"
+            app:srcCompat="@drawable/h" />
+    </LinearLayout>
+
+    <!--Texto de Registro-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="Arial"
+            android:layout_marginLeft="50sp"
+            android:text="Registro"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <!--Campo de Nombre-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="320sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-10sp">
+
+            <ImageView
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/nm" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:counterMaxLength="30"
+                android:layout_marginTop="2sp">
+                <!--Validacion de caracteres a introducir-->
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tilnombrer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="Nombre completo"
+                    android:fontFamily="Arial"
+                    android:textSize="17sp"
+                    android:inputType="text"
+                    android:digits="qwertyuiopasdfghjklñzxcvbnmQWERTYUIOPASDFGHJKLÑZXCVBNM áéíóüú"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--Campo de Usuario-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="320sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-10sp">
+
+            <ImageView
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/us" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:counterMaxLength="30"
+                android:layout_marginTop="2sp">
+                <!--Validacion de caracteres a introducir-->
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tilusuarior"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="Usuario"
+                    android:fontFamily="Arial"
+                    android:textSize="17sp"
+                    android:inputType="text"
+                    android:digits="qwertyuiopasdfghjklñzxcvbnmQWERTYUIOPASDFGHJKLÑZXCVBNM áéíóüú1234567890"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--Campo de Correo-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="320sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-10sp">
+
+            <ImageView
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/corre" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:counterMaxLength="30"
+                android:layout_marginTop="2sp">
+                <!--Validacion de caracteres a introducir-->
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tilcorreor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="Correo electrónico"
+                    android:fontFamily="Arial"
+                    android:textSize="17sp"
+                    android:inputType="textEmailAddress"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--Campo de contraseña-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="320sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-10sp">
+
+            <ImageView
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ps" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:counterMaxLength="30"
+                app:passwordToggleEnabled="true"
+                android:layout_marginTop="2sp">
+                <!--Validacion de caracteres a introducir-->
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tilpassr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="Contraseña"
+                    android:fontFamily="Arial"
+                    android:textSize="17sp"
+                    android:inputType="textPassword"
+                    android:digits="qwertyuiopasdfghjklñzxcvbnmQWERTYUIOPASDFGHJKLÑZXCVBNM áéíóüú1234567890"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--Boton de registrar-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/llcorreo"
+        android:layout_marginTop="15sp">
+
+        <Button
+            android:id="@+id/btnregistror"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:textColor="#ffffff"
+            android:text="    Registrar    "
+            android:fontFamily="Arial"
+            android:textSize="17sp"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+</LinearLayout>

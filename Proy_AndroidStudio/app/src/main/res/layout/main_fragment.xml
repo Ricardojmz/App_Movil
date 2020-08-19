@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60sp"
+        android:gravity="center"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="90sp"
+            app:srcCompat="@drawable/h" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        >
+        <LinearLayout
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:id="@+id/llescanermf"
+            android:layout_marginEnd="5dp"
+            >
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animationVie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:lottie_autoPlay="true"
+                app:lottie_fileName="scanerbarras.json"
+                app:lottie_imageAssetsFolder="assets"
+                app:lottie_loop="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_marginTop="10sp"
+            android:id="@+id/lltestmf"
+            android:layout_marginStart="5dp"
+            >
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animationVi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:lottie_autoPlay="true"
+                app:lottie_fileName="exa.json"
+                app:lottie_imageAssetsFolder="assets"
+                app:lottie_loop="true" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+    <Button
+        android:id="@+id/esca"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10sp"
+        android:fontFamily="@font/intimacy"
+        android:text="Escanear"
+        android:background="@color/colorPrimary"
+        android:textColor="#ffffff"
+        />
+        <Button
+            android:id="@+id/test"
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:text="Test"
+            android:fontFamily="@font/intimacy"
+            android:background="@color/colorPrimary"
+            android:textColor="#ffffff"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/codigo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Menú ECOtesch">
+
+    <menu>
+        <item
+            android:id="@+id/logros"
+            android:icon="@drawable/ic_grade"
+            android:title="Logros">
+        </item>
+        <item
+            android:id="@+id/contacto"
+            android:icon="@drawable/ic_speaker"
+            android:title="Contactanos">
+        </item>
+        <item
+            android:id="@+id/minijuego"
+            android:icon="@drawable/ic_videogame"
+            android:title="Minijuego">
+        </item>
+        <item
+            android:id="@+id/ecoteschweb"
+            android:icon="@drawable/ic_laptop"
+            android:title="ECOtesch Web">
+        </item>
+        <item
+            android:id="@+id/salir"
+            android:icon="@drawable/ic_salir"
+            android:title="Cerrar sesión">
+        </item>
+    </menu>
+
+    </item>
+
+
+</menu>
